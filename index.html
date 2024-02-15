@@ -7,45 +7,87 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <title>Card Selection UI</title>
+    <title>Search Form</title>
   </head>
   <body>
     <section class="section">
       <div class="container">
-        <div class="columns is-centered">
-          <!-- Release Card -->
-          <div class="column is-one-third">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">Release</p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-                  <!-- Your content for the Release card goes here -->
-                  <p>Select the Release card.</p>
-                </div>
+        <form>
+          <div class="field is-grouped is-flex">
+            <!-- First Dropdown Select with Label -->
+            <div class="control">
+              <label for="select1" class="label">Select Option 1:</label>
+              <div class="select is-primary">
+                <select id="select1" name="option1">
+                  <option>Select Option 1</option>
+                  <option>Option 1.1</option>
+                  <option>Option 1.2</option>
+                </select>
               </div>
-              <footer class="card-footer">
-                <a href="#" class="card-footer-item">Select</a>
-              </footer>
+            </div>
+
+            <!-- Second Dropdown Select with Label -->
+            <div class="control">
+              <label for="select2" class="label">Select Option 2:</label>
+              <div class="select is-primary">
+                <select id="select2" name="option2">
+                  <option>Select Option 2</option>
+                  <option>Option 2.1</option>
+                  <option>Option 2.2</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Search Button -->
+            <div class="control">
+              <button type="submit" class="button is-info">Search</button>
             </div>
           </div>
+        </form>
+      </div>
+    </section>
 
-          <!-- Module Card -->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
           <div class="column is-one-third">
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">Module</p>
-              </header>
-              <div class="card-content">
-                <div class="content">
-                  <!-- Your content for the Module card goes here -->
-                  <p>Select the Module card.</p>
-                </div>
+            <div
+              style="
+                border: 1px solid rgb(216, 225, 236);
+                border-radius: 5px;
+                position: relative;
+                padding: 8px;
+                padding-left: 12px;
+              "
+            >
+              <div>
+                <p class="has-text-weight-semibold">Pulsar-docs</p>
+                <p class="is-size-7">
+                  Version: <span class="is-italic">0.0.1</span>
+                </p>
               </div>
-              <footer class="card-footer">
-                <a href="#" class="card-footer-item">Select</a>
-              </footer>
+              <div
+                class="is-flex"
+                style="
+                  width: 30px;
+                  background-color: rgb(229, 239, 250);
+                  border-left: 1px solid rgb(216, 225, 236);
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  right: 0;
+                "
+              >
+                <p
+                  style="
+                    writing-mode: vertical-rl;
+                    text-align: center;
+                    margin: auto;
+                  "
+                >
+                  View
+                </p>
+              </div>
             </div>
           </div>
         </div>
